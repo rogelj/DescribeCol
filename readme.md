@@ -11,4 +11,4 @@ USAGE:
 describecol(df, n)
 
 df - pandas DataFrame
-n - index for the column to be descibed
+n - index for the column to be described
