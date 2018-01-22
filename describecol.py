@@ -26,7 +26,7 @@ def describecol(df, n=0):
     print('The name of the column is {0}\n\n'.format(colnames[n]))
 
     print('DESCRIPTION\n')
-    print (df[colnames[n]].describe())
+    print(df[colnames[n]].describe())
 
     print('\n\n')
 
@@ -55,6 +55,7 @@ def describecol(df, n=0):
         plt.show()
     else:
         print(df[colnames[n]].dtype)
+
 
 if __name__ == "__main__":
     d = {'one': [1., 2., 3., 4., 5.],
