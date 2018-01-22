@@ -6,9 +6,28 @@ DescribeCol is a function that facilitates data quality testing. It is a basic f
 - data visualisation
 - data examples
 
-USAGE:
+## USAGE
 
-describecol(df, n)
+`describecol(df, n)`
 
-df - pandas DataFrame
-n - index for the column to be described
+`df` - pandas DataFrame
+`n` - index for the column to be described
+
+
+
+**Example**:
+
+```python
+import pandas as pd
+import describecol as dc
+
+d = {'one': [1., 2., 3., 4., 5.],
+     'two': ['red', 'green', 'green', 'red', 'red']}
+df = pd.DataFrame(d)
+cols = list(df.columns)
+
+for n in range(0, len(df.columns)):
+    dc.describecol(df, n)
+   
+```
+
